@@ -12,12 +12,29 @@
 </head>
 <body>
 
-  We're coming soon
+  <header class="header">
+    <img src="./images/logo.svg" alt="Base Apparel">
+  </header>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <figure class="photo">
+    <img src="./images/hero-mobile.jpg" 
+         alt="A woman with short hair almost touching her face with her hand."
+         srcset="./images/hero-mobile.jpg 375w, ./images/hero-desktop.jpg 1100w>"
+         sizes="(min-width: 1100px) 375px">
+  </figure>
+  
+  <main class="main">
+    <h1 class="title"><em class="title__emphasis">We're</em> coming soon</h1>
+    <p class="description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-  Email Address
+    <form class="form" action="">
+      <input type="email" name="email" id="email" placeholder="Email Address">
+      <button class="button" type="submit">
+        <img src="./images/icon-arrow.svg" alt="Send">
+      </button>
+      <p class="error"></p>
+    </form>
+  </main>
   
   <footer>
     <p class="attribution">
