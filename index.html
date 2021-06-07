@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -27,12 +28,12 @@
     <h1 class="title"><em class="title__emphasis">We're</em> coming soon</h1>
     <p class="description">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-    <form class="form" action="">
-      <input type="email" name="email" id="email" placeholder="Email Address">
+    <form class="form" novalidate>
+      <input type="email" class="email" name="email"  placeholder="Email Address">
       <button class="button" type="submit">
         <img src="./images/icon-arrow.svg" alt="Send">
       </button>
-      <p class="error"></p>
+      <p id="error" class="error"></p>
     </form>
   </main>
   
