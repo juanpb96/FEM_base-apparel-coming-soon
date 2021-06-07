@@ -9,20 +9,17 @@ const emailRegExp = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|
 const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target[0].value;
-    if (email === '') {
-        errorP.innerText = 'Please insert an email.';
-        errorP.classList.add('error--active');
-        return;
-    }
-    if (!emailRegExp.test(email)) {
-        errorP.innerText = 'Please provide a valid email.';
+    if (email === '' || !emailRegExp.test(email)) {
+        errorP.innerText = email === '' ? 'Please insert an email.' : 'Please provide a valid email.';
         errorP.classList.add('error--active');
         button.classList.add('button--error');
+        emailInput.classList.add('email--error');
         return;
     }
 
     errorP.classList.remove('error--active');
     button.classList.remove('button--error');
+    emailInput.classList.remove('email--error');
     emailInput.value = '';
 };
 
