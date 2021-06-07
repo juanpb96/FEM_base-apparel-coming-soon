@@ -169,6 +169,10 @@ body {
     grid-area: photo;
     align-self: center;
   }
+  .photo__img {
+    max-width: 100%;
+    margin: auto;
+  }
 
   .main {
     grid-area: main;
