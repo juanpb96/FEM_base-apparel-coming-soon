@@ -159,6 +159,7 @@ body {
   .header {
     grid-area: logo;
     margin: auto;
+    align-items: flex-end;
   }
 
   .logo {
@@ -168,9 +169,12 @@ body {
   .photo {
     grid-area: photo;
     align-self: center;
+    overflow: hidden;
+    height: 100%;
   }
   .photo__img {
-    max-width: 100%;
+    width: auto;
+    height: 100%;
     margin: auto;
   }
 
@@ -180,8 +184,9 @@ body {
 
   .title {
     max-width: 50%;
+    letter-spacing: 0.9rem;
     line-height: 1.1;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .title, .description {
@@ -189,7 +194,11 @@ body {
   }
 
   .description, .form {
-    max-width: 85%;
+    max-width: 90%;
+  }
+
+  .description {
+    font-size: 1em;
   }
 
   .button {
